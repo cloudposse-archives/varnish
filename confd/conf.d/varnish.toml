@@ -1,0 +1,9 @@
+[template]
+prefix = "/"
+src = "varnish.vcl.tmpl"
+dest = "/etc/varnish/default.vcl"
+owner = "nginx"
+mode = "0644"
+keys = [ "/" ]
+check_cmd = "/usr/sbin/varnishd -f {{.src}} -C"
+reload_cmd = "service varnish reload"
