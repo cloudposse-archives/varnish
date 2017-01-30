@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p /etc/varnish/secrets
 echo ${VARNISH_SECRET} > /etc/varnish/secrets/secret
 
 set -x
