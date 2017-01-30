@@ -19,7 +19,6 @@ ENV VARNISH_STORAGE 1G
 
 ENV VARNISH_SECRET=
 
-
 RUN set -ex \
       && apk update \
       && apk add \
